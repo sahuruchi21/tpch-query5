@@ -4,10 +4,11 @@ Overview
 This project implements TPC-H Query 5 in C++ with support for multithreaded execution.
 The goal is to evaluate query performance using single-threaded and multi-threaded (4 threads) execution on TPC-H Scale Factor 2 (SF2) data.
 
-The implementation reads raw .tbl files generated using the TPC-H DBGEN tool, performs the required joins and aggregations in memory, and outputs the final result sorted by revenue.# TPCH Query 5 C++ Multithreading Project
+The implementation reads raw .tbl files generated using the TPC-H DBGEN tool, performs the required joins and aggregations in memory, and outputs the final result sorted by revenue.# TPCH 
+
+Query 5 (Reference)
 
 
- Query 5(Reference)
  SELECT
     n_name,
     SUM(l_extendedprice * (1 - l_discount)) AS revenue
@@ -32,6 +33,7 @@ GROUP BY
     n_name
 ORDER BY
     revenue DESC;
+
 
 * Features
 
