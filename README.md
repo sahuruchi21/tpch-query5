@@ -1,4 +1,4 @@
-PCH Query 5 – C++ Multithreaded Implementation
+
 Overview
 
 This project implements TPC-H Query 5 in C++ with support for multithreaded execution.
